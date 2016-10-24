@@ -59,7 +59,7 @@ public abstract class TTTWarEngine {
 		// check that the names are not null either,
 		// so that we dont fail later
 		if (robotX.getRobotMasterName() == null) {
-			throw new IllegalArgumentException(robotX + " master name may not be null");
+		    throw new IllegalArgumentException(robotX + " master name may not be null");
 		}
 		if (robotO.getRobotMasterName() == null) {
 			throw new IllegalArgumentException(robotO + " master name may not be null");
