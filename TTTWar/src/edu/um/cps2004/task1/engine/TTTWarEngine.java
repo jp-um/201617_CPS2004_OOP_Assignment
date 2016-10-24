@@ -20,61 +20,61 @@ import edu.um.cps2004.task1.robot.TTTRobot;
  */
 public abstract class TTTWarEngine {
 
-	/**
-	 * The two players, one will be playing X and the other will be playing O.
-	 * 
-	 * Eventually it might be a good idea to have a list of players, instead of
-	 * hardcoding two (this way we can pair teams up etc.)
-	 */
-	private final TTTPlayer playerX, playerO;
+    /**
+     * The two players, one will be playing X and the other will be playing O.
+     * 
+     * Eventually it might be a good idea to have a list of players, instead of
+     * hardcoding two (this way we can pair teams up etc.)
+     */
+    private final TTTPlayer playerX, playerO;
 
-	/**
-	 * The board we are going to play upon
-	 */
-	private final GameBoard board = new GameBoard();
+    /**
+     * The board we are going to play upon
+     */
+    private final GameBoard board = new GameBoard();
 
-	/**
-	 * The constructor of the robots war engine.
-	 * 
-	 * Please note that it does not matter which robot plays X and which plays O
-	 * since the starting robot is determined randomly.
-	 * 
-	 * @param robotX
-	 *            An instance of the first robot, may not be null. This robot
-	 *            will play with X.
-	 * @param robotO
-	 *            An instance of the second robot, may not be null This robot
-	 *            will play with O.
-	 */
-	public TTTWarEngine(final TTTRobot robotX, final TTTRobot robotO) {
-		super(); // implied
-		// do some validation
-		if (robotX == null) {
-			throw new IllegalArgumentException("robotX may not be null");
-		}
-		if (robotO == null) {
-			throw new IllegalArgumentException("robotO may not be null");
-		}
+    /**
+     * The constructor of the robots war engine.
+     * 
+     * Please note that it does not matter which robot plays X and which plays O
+     * since the starting robot is determined randomly.
+     * 
+     * @param robotX
+     *            An instance of the first robot, may not be null. This robot
+     *            will play with X.
+     * @param robotO
+     *            An instance of the second robot, may not be null This robot
+     *            will play with O.
+     */
+    public TTTWarEngine(final TTTRobot robotX, final TTTRobot robotO) {
+        super(); // implied
+        // do some validation
+        if (robotX == null) {
+            throw new IllegalArgumentException("robotX may not be null");
+        }
+        if (robotO == null) {
+            throw new IllegalArgumentException("robotO may not be null");
+        }
 
-		// check that the names are not null either,
-		// so that we dont fail later
-		if (robotX.getRobotMasterName() == null) {
-		    throw new IllegalArgumentException(robotX + " master name may not be null");
-		}
-		if (robotO.getRobotMasterName() == null) {
-			throw new IllegalArgumentException(robotO + " master name may not be null");
-		}
+        // check that the names are not null either,
+        // so that we dont fail later
+        if (robotX.getRobotMasterName() == null) {
+            throw new IllegalArgumentException(robotX + " master name may not be null");
+        }
+        if (robotO.getRobotMasterName() == null) {
+            throw new IllegalArgumentException(robotO + " master name may not be null");
+        }
 
-		// create a player out of the first robot
-		this.playerX = new TTTPlayer(Mark.X, robotX);
-		// create a player out of the second robot
-		this.playerO = new TTTPlayer(Mark.O, robotO);
-	}
+        // create a player out of the first robot
+        this.playerX = new TTTPlayer(Mark.X, robotX);
+        // create a player out of the second robot
+        this.playerO = new TTTPlayer(Mark.O, robotO);
+    }
 
-	/**
-	 * Plays the game (gives a turn each to the players to play) Should set a
-	 * winner (at the end of the encounter if non draw game).
-	 */
-	public abstract void play();
+    /**
+     * Plays the game (gives a turn each to the players to play) Should set a
+     * winner (at the end of the encounter if non draw game).
+     */
+    public abstract void play();
 
 }
