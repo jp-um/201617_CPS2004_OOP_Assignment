@@ -10,6 +10,7 @@ javac -classpath tttwar_v1.0.jar JPJeegRobotDAcciaio.java
 ```
 
 If using packages, edit the above line accordingly.  Documentation of the classes
-is available at [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+is available [here](http://htmlpreview.github.io/?https://github.com/jp-uom/201617_CPS2004_OOP_Assignment/blob/master/docs/index.html "TTT War javadocs").
+You can browse the source code [here](https://github.com/jp-uom/201617_CPS2004_OOP_Assignment/tree/master/src/edu/um/cps2004/task1 "TTT War source code").
 
-JP ```<jean.p.ebejer@um.edu.mt>```
+JP
