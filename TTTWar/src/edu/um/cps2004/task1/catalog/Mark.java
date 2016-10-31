@@ -7,7 +7,7 @@ package edu.um.cps2004.task1.catalog;
 
 
 /**
- * The playing signs for Tic Tac Toe.  X or O really...
+ * The playing marks for Tic Tac Toe.  X or O really...
  *
  * @author <a href="mailto:jean.p.ebejer@um.edu.mt">JP</a>
  */

@@ -40,7 +40,7 @@ public final class TTTPlayer {
 	 */
 	public TTTPlayer(final Mark mark, final TTTRobot robot) {
 		if (mark == null) {
-			throw new IllegalArgumentException("sign cannot be null");
+			throw new IllegalArgumentException("mark cannot be null");
 		}
 		if (robot == null) {
 			throw new IllegalArgumentException("robot cannot be null");
@@ -62,13 +62,21 @@ public final class TTTPlayer {
 	}
 
 	/**
-	 * Gets the playing sign for the player 
-	 * @return the player sign
+	 * Gets the playing mark for the player 
+	 * @return The player's mark (either X or O), never null.
 	 */
 	public Mark getMark() {
 		return mark;
 	}
 
+	/**
+	 * Gets the playing mark of your opponent.  Assumes a two-player game (breaks otherwise).
+	 * @return The mark of the player's opponent (either X or O), never null.
+	 */
+	public Mark getMarkOfOpponent() {
+	    return Mark.X.equals(mark) ? Mark.O : Mark.X;  
+	}
+	
 	/**
 	 * Hashcode ovverride
 	 */

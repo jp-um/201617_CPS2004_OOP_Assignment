@@ -13,7 +13,7 @@ import edu.um.cps2004.task1.robot.TTTRobot;
  * The Tic Tac Toe war engine.
  * 
  * Note that this class does <b>not</b> determine the intelligence of the robot
- * players but simply implements the 'rules of engagement'.
+ * players but simply implements the 'rules of engagement' (i.e. the game).
  *
  * @author <a href="mailto:jean.p.ebejer@um.edu.mt">JP</a>
  * @version 1.0
@@ -35,9 +35,6 @@ public abstract class TTTWarEngine {
 
     /**
      * The constructor of the robots war engine.
-     * 
-     * Please note that it does not matter which robot plays X and which plays O
-     * since the starting robot is determined randomly.
      * 
      * @param robotX
      *            An instance of the first robot, may not be null. This robot
