@@ -26,12 +26,12 @@ public abstract class TTTWarEngine {
      * Eventually it might be a good idea to have a list of players, instead of
      * hardcoding two (this way we can pair teams up etc.)
      */
-    private final TTTPlayer playerX, playerO;
+    protected final TTTPlayer playerX, playerO;
 
     /**
      * The board we are going to play upon
      */
-    private final GameBoard board = new GameBoard();
+    protected final GameBoard board = new GameBoard();
 
     /**
      * The constructor of the robots war engine.
