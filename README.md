@@ -6,7 +6,7 @@ In order to compile your classes/interfaces/etc. download the binary distributio
 (`jar` file) from the `dist` directory, then compile using:
 
 ```bash
-javac -classpath tttwar_v1.0.jar JPJeegRobotDAcciaio.java
+javac -classpath tttwar_v1.1.jar JPJeegRobotDAcciaio.java
 ```
 
 If using packages, edit the above line accordingly.  Documentation of the classes
