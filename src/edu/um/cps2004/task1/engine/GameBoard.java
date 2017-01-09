@@ -282,11 +282,6 @@ public final class GameBoard {
      * Plays the position on the board. Before the actual playing, the position
      * is validated by calling the validate method above.
      * 
-     * Note that this method is default/package protected - so that no one
-     * outside the engine can call it.
-     * 
-     * A hacker might call this method in his play() and circumvent the engine.
-     * 
      * @param positionToPlay
      *            The position to play
      * @param mark
@@ -296,7 +291,7 @@ public final class GameBoard {
      * @throws PositionAlreadyOccupiedException
      *             If the position is already occupied
      */
-    void playAtPosition(final int positionToPlay, final Mark mark)
+    public void playAtPosition(final int positionToPlay, final Mark mark)
             throws PositionOutOfRangeException, PositionAlreadyOccupiedException {
         // check
         validatePlayTentative(positionToPlay);
