@@ -148,7 +148,7 @@ public final class GameBoard {
      * 
      * Also it checks if there already is a mark in the tentative position.
      *
-     * This method should be called by all players prior to returning their
+     * This method may be called by all players prior to returning their
      * playing position. The engine will disqualify any robot which does not
      * comply to this validation.
      * 
